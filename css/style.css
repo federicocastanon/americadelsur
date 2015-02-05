@@ -1,0 +1,448 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+	min-height: 100%;
+	width: 100%;
+}
+#headear {
+	background-color: #FFFFFF;
+	width: 100%;
+	min-height: 93px;
+	height: 10%;
+	float: left;
+	position: relative;
+}
+
+.encabezado {
+	background: url(img/logo.png) #FFFFFF no-repeat;
+	background-position: left;
+	background-size: contain;
+	color: #1B216F;
+	font-family: 'BenchNine', sans-serif;
+	font-weight: 300;
+	float: left;
+}
+#navigation {
+	width: 50%;
+	background-color: #FFFFFF;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.linkNavegacion {
+	display: block;
+	min-width: 100px;
+	background-color: #FFFFFF;
+	color: #1B216F;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	font-family: 'BenchNine', sans-serif;
+	font-weight: 300;
+}
+.linkNavegacion:visited, .linkNavegacion:active {
+	color: #1B216F;
+}
+.linkNavegacion:hover {
+	background-color: #1B216F;
+	color: #DEC99B;
+}
+.seleccionado {
+	background: url(img/ribbon.png) #1B216F no-repeat;
+	background-size: cover;
+	color: #F2F2F2 !important;
+}
+#cuerpo {
+	width: 100%;
+	background: url(img/medioescudo.png) #1B216F no-repeat;
+	background-position: left;
+	background-size: contain;
+	display: block;
+	padding: 1% 0 1% 0;
+	float: left;
+}
+
+#footer {
+	min-height: 100px;
+	height: 15%;
+	background-color: #FFFFFF;
+	width: 80%;
+	padding-left: 20%;
+	padding-top: 1%;
+	font-family: 'Crimson Text', serif;
+	font-weight: 400;
+	float: left;
+}
+.grupoNavegacion {
+	float: left;
+	height: 80%;
+	width: 20%;
+}
+.linkFooter {
+	float: left;
+	color: #000000;
+	font-family: 'Crimson Text', serif;
+	font-weight: 400;
+	width: 80%;
+	padding-left: 20%;
+	cursor: pointer;
+}
+#datos {
+	float: right;
+	font-family: 'Crimson Text', serif;
+	font-weight: 400;
+}
+.copyright {
+	height: 25px;
+	padding-left: 25%;
+	width: 75%;
+	float: right;
+	font-family: 'Crimson Text', serif;
+	font-weight: 400;
+}
+
+.separator {
+	width: 100%;
+	height: 1px;
+	background-color: #FFFFFF;
+	display: block;
+}
+#lean_overlay {
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	display: none;
+}
+.modal_close {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: url(img/modal_close.png);
+	z-index: 2;
+}
+
+/*HOME*/
+.carrousellHome {
+	height: 30%;
+	width: 60%;
+	margin: 0 0 0 20%;
+	float: left;
+	position: relative;
+}
+
+.diapo {
+	margin: 0;
+	background-color: #FFFFFF;
+}
+.diapo p {
+	padding: 2% 8%;
+}
+.diapo img {
+
+}
+.wrapperLinkHome {
+	height: 50%;
+	width: 56%;
+	margin: 0 0 0 20%;
+	float: left;
+	position: relative;
+	padding: 1% 2% 1% 2%;
+	background-color: #FFFFFF;
+}
+.wrapperLinkHomeImagenes {
+	height: 100%;
+	width: 70%;
+	float: left;
+	margin-right: 1%;
+}
+.wrapperLinkHomeSecundario {
+	width: 25%;
+	border-left: solid 1px #000000;
+	padding: 0 0 0 2%;
+	height: 100%;
+	float: left;
+}
+.linkHomeImagen {
+	height: 40%;
+}
+.linkHomeImagen img {
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+.wrapperTituloBajadaHome {
+	width: 55%;
+	height: 100%;
+	float: right;
+}
+.wrapperTituloBajadaHome .bajadaLinkHome {
+	margin: 6% 0 0 0;
+}
+.tituloLinkHome {
+	width: 100%;
+	float: left;
+}
+.bajadaLinkHome {
+	width: 100%;
+	float: left;
+}
+.linkHomeSecundario {
+	height: 30%;
+}
+
+/*Home*/
+
+/*contacto*/
+.encabezadoContacto {
+	color: #1B216F;
+	margin-left: 5%;
+}
+.wrapperDetalleContacto {
+	width: 90%;
+	padding: 4% 0;
+	position: absolute;
+}
+.cCorreo {
+	background: url('img/c1.png') no-repeat top;
+}
+.cTelefono {
+	background: url('img/c2.png') no-repeat top;
+	border-right: solid 1px #DEC99B;
+}
+.cMail {
+	background: url('img/c3.png') no-repeat top;
+	border-right: solid 1px #DEC99B;
+}
+.vSeparator {
+	width: 1px;
+	height: 100%;
+	background-color: #000000;
+	display: block;
+	float: left;
+	margin: 0 2%;
+}
+.tituloContacto {
+	color: #1B216F;
+	text-align: center;
+	width: 100%;
+}
+.detalleContacto {
+	width: 30%;
+	float: left;
+	padding-top: 10%;
+}
+
+.bajadaContacto {
+	text-align: center;
+	width: 100%;
+}
+.azul {
+	color: #1B216F;
+}
+/*contacto*/
+
+/*Institucional*/
+.fraseInstitucional, .fraseContacto {
+	height: 20%;
+	width: 80%;
+	margin: 0 0 0 10%;
+	background-color: #F2F2F2;
+	color: #1B216F;
+}
+.wrapperContenidoInstitucional, .wrapperContenidoContacto {
+	min-height: 65%;
+	margin: 2.5% 0 2.5% 10%;
+	padding: 1% 0 1% 0;
+	width: 80%;
+	background-color: #F2F2F2;
+}
+.wrapperDetalleInstitucional {
+	width: 73%;
+	padding-right: 2%;
+	float: left;
+}
+.detalleInstitucional {
+
+}
+.hSeparator, .hSeparator2 {
+	height: 1px;
+	width: 100%;
+	background-color: #000000;
+	float: left;
+}
+.hSeparator {
+	margin: 1% 0 1% 0;
+}
+.hSeparator2 {
+	margin: 2% 0 2% 0;
+}
+.tituloInstitucional {
+	color: #25286D;
+}
+.bajadaInstitucional {
+
+}
+.wrapperImagenesInstitucional {
+	background-color: #FFFFFF;
+	width: 25%;
+	float: left;
+}
+.wrapperImagenesInstitucional img {
+	height: 20%;
+	margin-left: 2.5%;
+	margin-top: 3%;
+}
+/*institucional*/
+
+@media screen and (max-height: 800px) {
+	.linkNavegacion {
+		font-size: 14px;
+		padding: 25px 0;
+	}
+	.encabezado {
+		font-size: 50px;
+		padding: 20px 0px 15px 80px;
+		margin-left: 2%;
+	}
+	#navigation {
+		min-height: 20px;
+	}
+
+	#cuerpo {
+		min-height: 300px;
+	}
+	#footer {
+		font-size: 12px;
+	}
+	#datos {
+		padding: 10px 30px 30px 0px;
+		font-size: 12px;
+	}
+	#copyright {
+		font-size: 12px;
+	}
+	.diapo p {
+		font-size: 24px;
+	}
+
+	.tituloLinkHome {
+		font-size: 14px;
+	}
+	.bajadaLinkHome {
+		font-size: 11px;
+	}
+
+	#wrapperContacto {
+		padding: 100px 0 100px 80px;
+		min-height: 200px;
+	}
+	.formContacto {
+
+	}
+	#camposWrapper {
+		padding-bottom: 30px;
+	}
+	.campoFormulario {
+		min-width: 356px;
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+	.campoFormulario label {
+		font-size: 14px;
+	}
+	.campoFormulario input, .campoFormulario textarea {
+		font-size: 14px;
+		padding: 0 0 0 5px;
+	}
+	.btnEnviar {
+		padding: 0 0 0 5px;
+	}
+	.fraseInstitucional, .fraseContacto {
+		font-size: 32px;
+	}
+	.tituloInstitucional {
+		font-size: 16px;
+	}
+	.bajadaInstitucional {
+		font-size: 13px;
+	}
+	.tituloContacto {
+		font-size: 14px;
+	}
+	.bajadaContacto {
+		font-size: 12px;
+	}
+	.encabezadoContacto {
+		font-size: 40px;
+	}
+}
+
+@media screen and (min-height: 800px) {
+	.linkNavegacion {
+		padding: 30px 30px 30px 30px;
+		font-size: 30px;
+	}
+	.encabezado {
+		font-size: 80px;
+		padding: 10px 0px 15px 80px;
+	}
+	#navigation {
+		height: 101px;
+		padding: 0px 0px 0px 20%;
+	}
+
+	#cuerpo {
+		min-height: 500px;
+	}
+	#footer {
+		font-size: 14px;
+	}
+	#datos {
+		padding: 10px 30px 30px 0px;
+		font-size: 16px;
+	}
+	#copyright {
+		font-size: 12px;
+	}
+
+	.diapo p {
+		font-size: 16px;
+	}
+
+	#wrapperContacto {
+		padding: 100px 0 100px 80px;
+		min-height: 200px;
+	}
+	.formContacto {
+
+	}
+	#camposWrapper {
+		padding-bottom: 30px;
+	}
+	.campoFormulario {
+		min-width: 356px;
+		margin-bottom: 10px;
+		font-size: 22px;
+	}
+	.campoFormulario label {
+		font-size: 22px;
+	}
+	.campoFormulario input, .campoFormulario textarea {
+		font-size: 22px;
+		padding: 0 0 0 5px;
+	}
+	.btnEnviar {
+		padding: 0 0 0 5px;
+	}
+
+}
