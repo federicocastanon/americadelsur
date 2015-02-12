@@ -6,11 +6,11 @@ html, body {
 	min-height: 100%;
 	width: 100%;
 }
-#headear {
+#header {
 	background-color: #FFFFFF;
 	width: 100%;
-	min-height: 93px;
-	height: 10%;
+	min-height: 80px;
+	height: 8%;
 	float: left;
 	position: relative;
 }
@@ -20,7 +20,7 @@ html, body {
 	background-position: left;
 	background-size: contain;
 	color: #1B216F;
-	font-family: 'BenchNine', sans-serif;
+	font-family: Georgia;
 	font-weight: 300;
 	float: left;
 	cursor: pointer;
@@ -41,18 +41,18 @@ html, body {
 	text-align: center;
 	cursor: pointer;
 	text-decoration: none;
-	font-family: 'BenchNine', sans-serif;
+	font-family: Georgia;
 	font-weight: 300;
 }
 .linkNavegacion:visited, .linkNavegacion:active {
 	color: #1B216F;
 }
 .linkNavegacion:hover {
-	background-color: #1B216F;
-	color: #DEC99B;
+	color: #05080D;
 }
 .seleccionado {
-	background: url(img/ribbon.png) #1B216F no-repeat;
+	background: url(img/ribbon.png) no-repeat;
+	background-position: 8 -15;
 	background-size: cover;
 	color: #F2F2F2 !important;
 }
@@ -82,17 +82,22 @@ html, body {
 	height: 80%;
 	width: 20%;
 }
-.linkFooter {
+.linkFooter, .linkFooter :visited, .linkFooter :active {
 	float: left;
 	color: #000000;
-	font-family: 'Crimson Text', serif;
+	font-family: Georgia;
 	font-weight: 400;
-	width: 80%;	
+	width: 80%;
 	cursor: pointer;
+	text-decoration: none;
+}
+.linkFooter:hover {
+	color: #1B216F;
+	text-decoration: underline;
 }
 .datos {
 	float: right;
-	font-family: 'Crimson Text', serif;
+	font-family: Georgia;
 	font-weight: 400;
 }
 .copyright {
@@ -100,8 +105,16 @@ html, body {
 	padding-left: 25%;
 	width: 75%;
 	float: right;
-	font-family: 'Crimson Text', serif;
+}
+.copyright a {
+	text-decoration: none;
+	font-family: Georgia;
 	font-weight: 400;
+	color: #000000;
+}
+.copyright a:hover {
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .separator {
@@ -146,6 +159,7 @@ html, body {
 }
 .diapo p {
 	padding: 2% 8%;
+	font-family: 'Oswald', sans-serif;
 }
 .diapo img {
 
@@ -184,9 +198,11 @@ html, body {
 	width: 55%;
 	height: 100%;
 	float: right;
+	font-family: Georgia;
 }
 .wrapperTituloBajadaHome .bajadaLinkHome {
 	margin: 6% 0 0 0;
+	font-family: Georgia;
 }
 .tituloLinkHome {
 	width: 100%;
@@ -195,6 +211,7 @@ html, body {
 .bajadaLinkHome {
 	width: 100%;
 	float: left;
+	font-family: Georgia;
 }
 .linkHomeSecundario {
 	height: 30%;
@@ -220,16 +237,24 @@ html, body {
 	background-color: #1B216F;
 	min-height: 30%;
 }
+#wrapperTituloCalendario {
+	width: 95%;
+	padding: 2% 2% 1% 2%;
+	background-color: #1B216F;
+	min-height: 15%;
+}
 #tituloFormacion {
 	width: 100%;
 	color: #FFFFFF;
 	float: left;
+	font-family: Georgia;
 }
 #bajadaFormacion {
 	width: 100%;
 	color: #FFFFFF;
 	float: left;
 	font-style: italic;
+	font-family: Georgia;
 }
 #hSeparatorFormacion {
 	width: 80%;
@@ -243,6 +268,7 @@ html, body {
 	width: 100%;
 	height: 65%;
 	background-color: #FFFFFF;
+	margin-top: 3%;
 }
 .wrapperNavegacionFormacion {
 	width: 28%;
@@ -253,20 +279,21 @@ html, body {
 	width: 96%;
 	cursor: pointer;
 	background-color: #FFFFFF;
-	margin-bottom: 5%;	
+	margin-bottom: 5%;
 }
 .tituloItemNavegacion {
 	color: #1B216F;
+	font-family: 'Oswald', sans-serif;
 }
 .bajadaItemNavegacion {
 	width: 90%;
+	font-family: Georgia;
 }
 .oculto {
 	display: none;
 }
 
 /*FORMACION*/
-
 
 /*CALENDARIO*/
 .wrapperCalendario {
@@ -305,10 +332,11 @@ html, body {
 	margin-top: 2%;
 	float: left;
 }
-#wrapperContenidoCalendario {
+#wrapperContenidoCalendario, #wrapperContenidoFormacion {
 	width: 100%;
 	height: 65%;
 	background-color: #FFFFFF;
+	overflow-y: scroll;
 }
 .wrapperNavegacionCalendario {
 	width: 28%;
@@ -319,13 +347,15 @@ html, body {
 	width: 96%;
 	cursor: pointer;
 	background-color: #FFFFFF;
-	margin-bottom: 5%;	
+	margin-bottom: 5%;
 }
 .tituloItemNavegacion {
 	color: #1B216F;
+	font-family: 'Oswald', sans-serif;
 }
 .bajadaItemNavegacion {
 	width: 90%;
+	font-family: Georgia;
 }
 .oculto {
 	display: none;
@@ -333,27 +363,28 @@ html, body {
 
 /*CALENDARIO*/
 
-
 /*contacto*/
 .encabezadoContacto {
 	color: #1B216F;
-	margin-left: 5%;
+	margin: 0 0 3% 5%;
+	font-family: Georgia;
 }
 .wrapperDetalleContacto {
-	width: 90%;
-	padding: 4% 0;
-	position: absolute;
+	width: 100%;
 }
 .cCorreo {
-	background: url('img/c1.png') no-repeat top;
+	background: url('img/c3.png') no-repeat top;
+	background-size: auto 65%;
 }
 .cTelefono {
-	background: url('img/c2.png') no-repeat top;
+	background: url('img/c1.png') no-repeat top;
 	border-right: solid 1px #DEC99B;
+	background-size: auto 65%;
 }
 .cMail {
-	background: url('img/c3.png') no-repeat top;
+	background: url('img/c2.png') no-repeat top;
 	border-right: solid 1px #DEC99B;
+	background-size: auto 65%;
 }
 .vSeparator {
 	width: 1px;
@@ -367,16 +398,19 @@ html, body {
 	color: #1B216F;
 	text-align: center;
 	width: 100%;
+	font-family: Georgia;
 }
 .detalleContacto {
-	width: 30%;
+	width: 33%;
 	float: left;
 	padding-top: 10%;
+	font-family: Georgia;
 }
 
 .bajadaContacto {
 	text-align: center;
 	width: 100%;
+	font-family: Georgia;
 }
 .azul {
 	color: #1B216F;
@@ -390,12 +424,13 @@ html, body {
 	margin: 0 0 0 10%;
 	background-color: #F2F2F2;
 	color: #1B216F;
+	font-family: 'Oswald', sans-serif;
 }
 .wrapperContenidoInstitucional, .wrapperContenidoContacto {
 	min-height: 65%;
 	margin: 2.5% 0 2.5% 10%;
-	padding: 1% 0 1% 0;
-	width: 80%;
+	padding: 1% 0 1% 2%;
+	width: 78%;
 	background-color: #F2F2F2;
 }
 .wrapperDetalleInstitucional {
@@ -420,9 +455,10 @@ html, body {
 }
 .tituloInstitucional {
 	color: #25286D;
+	font-family: 'Oswald', sans-serif;
 }
 .bajadaInstitucional {
-
+	font-family: Georgia;
 }
 .wrapperImagenesInstitucional {
 	background-color: #FFFFFF;
@@ -442,7 +478,7 @@ html, body {
 		padding: 25px 0;
 	}
 	.encabezado {
-		font-size: 50px;
+		font-size: 36px;
 		padding: 20px 0px 15px 80px;
 		margin-left: 2%;
 	}
@@ -527,12 +563,12 @@ html, body {
 		min-height: 45px;
 		padding: 5px 2%;
 	}/*
-	.itemNavegacionFormacion:after{
-			content: '    ' url('img/arrow_right.png');
-			display: block;
-			width: 25px;
-			height: 22px;
-	}*/
+	 .itemNavegacionFormacion:after{
+	 content: '    ' url('img/arrow_right.png');
+	 display: block;
+	 width: 25px;
+	 height: 22px;
+	 }*/
 	#tituloCalendario {
 		font-size: 40px;
 	}
@@ -543,12 +579,12 @@ html, body {
 		min-height: 15px;
 		padding: 5px 2%;
 	}/*
-	.itemNavegacionCalendario:after{
-			content: '    ' url('img/arrow_right.png');
-			display: block;
-			width: 25px;
-			height: 22px;
-	}*/
+	 .itemNavegacionCalendario:after{
+	 content: '    ' url('img/arrow_right.png');
+	 display: block;
+	 width: 25px;
+	 height: 22px;
+	 }*/
 	.tituloItemNavegacion {
 		font-size: 13px;
 	}
