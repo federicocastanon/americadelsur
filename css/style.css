@@ -1,3 +1,4 @@
+@import url('fonts.css');
 * {
 	margin: 0px;
 	padding: 0px;
@@ -9,8 +10,6 @@ html, body {
 #header {
 	background-color: #FFFFFF;
 	width: 100%;
-	min-height: 80px;
-	height: 8%;
 	float: left;
 	position: relative;
 }
@@ -26,9 +25,7 @@ html, body {
 	cursor: pointer;
 }
 #navigation {
-	width: 50%;
-	background-color: #FFFFFF;
-	position: absolute;
+	background-color: #FFFFFF;	position: absolute;
 	bottom: 0;
 	right: 0;
 }
@@ -41,18 +38,18 @@ html, body {
 	text-align: center;
 	cursor: pointer;
 	text-decoration: none;
-	font-family: Georgia;
+	font-family: "Oswald";
 	font-weight: 300;
 }
 .linkNavegacion:visited, .linkNavegacion:active {
 	color: #1B216F;
 }
 .linkNavegacion:hover {
-	color: #05080D;
+	color: #3B3B3B;
 }
 .seleccionado {
 	background: url(img/ribbon.png) no-repeat;
-	background-position: 8 -15;
+	background-position: 0px 0px;
 	background-size: cover;
 	color: #F2F2F2 !important;
 }
@@ -67,14 +64,14 @@ html, body {
 }
 
 #footer {
-	min-height: 100px;
-	height: 15%;
+	min-height: 90px;
+	height: 11%;
 	background-color: #FFFFFF;
 	width: 80%;
 	padding-left: 10%;
-	padding-top: 1%;
-	font-family: 'Crimson Text', serif;
-	font-weight: 400;
+	padding-top: 0.5%;
+	font-family: 'Roboto', serif;
+	color: #3B3B3B;
 	float: left;
 }
 .grupoNavegacion {
@@ -84,43 +81,45 @@ html, body {
 }
 .linkFooter, .linkFooter :visited, .linkFooter :active {
 	float: left;
-	color: #000000;
-	font-family: Georgia;
-	font-weight: 400;
 	width: 80%;
 	cursor: pointer;
 	text-decoration: none;
+	color: #3B3B3B;
+	margin-bottom: 4%;
 }
-.linkFooter:hover {
+.linkFooter:hover, .linkMasUtilizado:hover {
 	color: #1B216F;
 	text-decoration: underline;
 }
 .datos {
 	float: right;
-	font-family: Georgia;
-	font-weight: 400;
+}
+. {
+text-align:center;
+width: 100%;
+float: right;
 }
 .copyright {
-	height: 25px;
-	padding-left: 25%;
-	width: 75%;
-	float: right;
+	width: 100%;
+	float: left;
 }
 .copyright a {
 	text-decoration: none;
-	font-family: Georgia;
-	font-weight: 400;
+	text-align: center;
+	width: 100%;
+	display: block;
 	color: #000000;
 }
 .copyright a:hover {
 	font-weight: bold;
+	color: #1B216F;
 	text-decoration: none;
 }
 
 .separator {
 	width: 100%;
 	height: 1px;
-	background-color: #FFFFFF;
+	background-color: #F2F2F2;
 	display: block;
 }
 #lean_overlay {
@@ -155,23 +154,24 @@ html, body {
 
 .diapo {
 	margin: 0;
-	background-color: #FFFFFF;
+	background-color: #F2F2F2;
 }
 .diapo p {
 	padding: 2% 8%;
-	font-family: 'Oswald', sans-serif;
+	font-family: Georgia;
 }
 .diapo img {
 
 }
 .wrapperLinkHome {
-	height: 50%;
+	height: 60%;
 	width: 76%;
 	margin: 0 0 0 10%;
 	float: left;
 	position: relative;
 	padding: 1% 2% 1% 2%;
-	background-color: #FFFFFF;
+	background-color: #F2F2F2;
+	color: #3B3B3B;
 }
 .wrapperLinkHomeImagenes {
 	height: 100%;
@@ -188,6 +188,8 @@ html, body {
 }
 .linkHomeImagen {
 	height: 40%;
+	display: block;
+	color: #3B3B3B;
 }
 .linkHomeImagen img {
 	width: 40%;
@@ -204,17 +206,40 @@ html, body {
 	margin: 6% 0 0 0;
 	font-family: Georgia;
 }
-.tituloLinkHome {
+.tituloLinkHome, .tituloLinksMasUtilizados, .linkMasUtilizado {
 	width: 100%;
 	float: left;
+	font-family: "Oswald";
 }
+.linkMasDocumentos, .linkMasDocumentos:visited, .linkMasDocumentos:active{
+	float: left;
+	width: 100%;
+	text-align: right;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+	padding-top: 5%;
+	font-family: Georgia;
+	color: #30338C;
+}
+.linkMasDocumentos:hover{
+	text-decoration: underline;
+	color: #05073C;
+}
+
 .bajadaLinkHome {
 	width: 100%;
 	float: left;
 	font-family: Georgia;
 }
-.linkHomeSecundario {
-	height: 30%;
+.tituloLinksMasUtilizados {
+	margin-bottom: 5%;
+}
+.linkMasUtilizado, .linkMasUtilizado:visited, .linkMasUtilizado:active {
+	padding: 0 0 5% 10%;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
 }
 
 /*Home*/
@@ -223,6 +248,7 @@ html, body {
 .wrapperFormacion {
 	width: 80%;
 	margin-left: 10%;
+	min-height: 100%;
 }
 
 .wrapperInfoFormacion {
@@ -234,24 +260,19 @@ html, body {
 #wrapperTituloBajada {
 	width: 95%;
 	padding: 2% 2% 1% 2%;
-	background-color: #1B216F;
-	min-height: 30%;
 }
-#wrapperTituloCalendario {
-	width: 95%;
-	padding: 2% 2% 1% 2%;
-	background-color: #1B216F;
-	min-height: 15%;
-}
+
 #tituloFormacion {
 	width: 100%;
-	color: #FFFFFF;
+	color: #F2F2F2;
 	float: left;
 	font-family: Georgia;
+	padding-bottom: 2%;
+	font-weight: normal;
 }
 #bajadaFormacion {
 	width: 100%;
-	color: #FFFFFF;
+	color: #F2F2F2;
 	float: left;
 	font-style: italic;
 	font-family: Georgia;
@@ -260,25 +281,20 @@ html, body {
 	width: 80%;
 	height: 1px;
 	background-color: #F2F2F2;
-	margin-left: 10%;
-	margin-top: 2%;
+	margin: 4% 0 4% 10%;
 	float: left;
 }
-#wrapperIframeCalendario {
-	width: 100%;
-	height: 65%;
-	background-color: #FFFFFF;
-	margin-top: 3%;
-}
+
 .wrapperNavegacionFormacion {
 	width: 28%;
 	float: right;
+	padding-top: 2%;
 }
 .itemNavegacionFormacion {
 	float: right;
 	width: 96%;
 	cursor: pointer;
-	background-color: #FFFFFF;
+	background-color: #F2F2F2;
 	margin-bottom: 5%;
 }
 .tituloItemNavegacion {
@@ -292,7 +308,15 @@ html, body {
 .oculto {
 	display: none;
 }
-
+#wrapperContenidoFormacion p{
+	padding-bottom: 2%;
+}
+#wrapperContenidoFormacion h3{
+	padding-bottom: 2%;
+}
+#wrapperContenidoFormacion ul {
+	list-style-position: inside;
+}
 /*FORMACION*/
 
 /*CALENDARIO*/
@@ -301,26 +325,36 @@ html, body {
 	margin-left: 10%;
 }
 
+.linkCalendario, .linkCalendario:visited, .linkCalendario:active {
+	display: block;
+	color: #25286D;
+	background-color: #F2F2F2;
+	padding: 2%;
+	margin: 5% 0;
+	cursor: pointer;
+	text-decoration: none;
+}
+
 .wrapperInfoCalendario {
 	width: 70%;
 	margin-right: 1%;
 	float: left;
 	min-height: 100%;
 }
-#wrapperTituloBajada {
+
+#wrapperTituloCalendario {
 	width: 95%;
 	padding: 2% 2% 1% 2%;
-	background-color: #1B216F;
-	min-height: 30%;
+	float: left;
 }
 #tituloCalendario {
 	width: 100%;
-	color: #FFFFFF;
+	color: #F2F2F2;
 	float: left;
 }
 #bajadaCalendario {
 	width: 100%;
-	color: #FFFFFF;
+	color: #F2F2F2;
 	float: left;
 	font-style: italic;
 }
@@ -328,16 +362,30 @@ html, body {
 	width: 80%;
 	height: 1px;
 	background-color: #F2F2F2;
-	margin-left: 10%;
-	margin-top: 2%;
+	margin: 4% 0 4% 10%;
 	float: left;
 }
-#wrapperContenidoCalendario, #wrapperContenidoFormacion {
+#wrapperIframeCalendario {
 	width: 100%;
 	height: 65%;
-	background-color: #FFFFFF;
-	overflow-y: scroll;
+	background-color: #F2F2F2;
+	float: left;
 }
+#wrapperContenidoFormacion {
+		/*min-height: 63%;*/
+}
+#wrapperContenidoCalendario{	
+	min-height: 67%;
+}
+#wrapperContenidoCalendario, #wrapperContenidoFormacion {
+	width: 94%;
+	background-color: #F2F2F2;
+	overflow: hidden;
+	color: #3B3B3B;
+	font-family: Georgia;
+	padding: 3%;
+}
+
 .wrapperNavegacionCalendario {
 	width: 28%;
 	float: right;
@@ -346,7 +394,7 @@ html, body {
 	float: right;
 	width: 96%;
 	cursor: pointer;
-	background-color: #FFFFFF;
+	background-color: #F2F2F2;
 	margin-bottom: 5%;
 }
 .tituloItemNavegacion {
@@ -356,6 +404,8 @@ html, body {
 .bajadaItemNavegacion {
 	width: 90%;
 	font-family: Georgia;
+	line-height: 1.5;
+	padding: 2% 0 3% 0;
 }
 .oculto {
 	display: none;
@@ -374,17 +424,17 @@ html, body {
 }
 .cCorreo {
 	background: url('img/c3.png') no-repeat top;
-	background-size: auto 65%;
+	background-size: auto 60%;
 }
 .cTelefono {
 	background: url('img/c1.png') no-repeat top;
-	border-right: solid 1px #DEC99B;
+	border-right: solid 1px #818181;
 	background-size: auto 65%;
 }
 .cMail {
 	background: url('img/c2.png') no-repeat top;
-	border-right: solid 1px #DEC99B;
-	background-size: auto 65%;
+	border-right: solid 1px #818181;
+	background-size: auto 60%;
 }
 .vSeparator {
 	width: 1px;
@@ -403,7 +453,7 @@ html, body {
 .detalleContacto {
 	width: 33%;
 	float: left;
-	padding-top: 10%;
+	padding-top: 13%;
 	font-family: Georgia;
 }
 
@@ -411,30 +461,65 @@ html, body {
 	text-align: center;
 	width: 100%;
 	font-family: Georgia;
+	margin-top: 2%;
 }
 .azul {
 	color: #1B216F;
 }
 /*contacto*/
-
+.fraseInstitucional p:before, .fraseContacto p:before, .diapo p:before {
+	content: '    ';
+	display: block;
+	background: url('img/quote_small_A.png') no-repeat;
+	background-size: cover;
+	float: left;
+}
+.fraseInstitucional p:after, .fraseContacto p:after, .diapo p:after {
+	content: '    ';
+	display: block;
+	background: url('img/quote_small_C.png') no-repeat;
+	background-size: cover;
+	float: right;
+}
 /*Institucional*/
-.fraseInstitucional, .fraseContacto {
-	height: 20%;
+.fraseInstitucional {
+	height: 12%;
 	width: 80%;
 	margin: 0 0 0 10%;
 	background-color: #F2F2F2;
 	color: #1B216F;
-	font-family: 'Oswald', sans-serif;
+	font-family: Georgia;
 }
-.wrapperContenidoInstitucional, .wrapperContenidoContacto {
-	min-height: 65%;
-	margin: 2.5% 0 2.5% 10%;
+.fraseContacto {
+	height: 17%;
+	width: 80%;
+	margin: 0 0 0 10%;
+	background-color: #F2F2F2;
+	color: #1B216F;
+	font-family: Georgia;
+}
+
+.fraseInstitucional p, .fraseContacto p {
+	float: left;
+	text-align: center;
+	padding: 1.5% 8%;
+}
+.wrapperContenidoInstitucional {
+	min-height: 82%;
+	margin: 1% 0 2.5% 10%;
+	padding: 1% 0 1% 2%;
+	width: 78%;
+	background-color: #F2F2F2;
+}
+.wrapperContenidoContacto {
+	min-height: 72%;
+	margin: 1% 0 2.5% 10%;
 	padding: 1% 0 1% 2%;
 	width: 78%;
 	background-color: #F2F2F2;
 }
 .wrapperDetalleInstitucional {
-	width: 73%;
+	width: 68%;
 	padding-right: 2%;
 	float: left;
 }
@@ -444,11 +529,11 @@ html, body {
 .hSeparator, .hSeparator2 {
 	height: 1px;
 	width: 100%;
-	background-color: #000000;
+	background-color: #818181;
 	float: left;
 }
 .hSeparator {
-	margin: 1% 0 1% 0;
+	margin: 2% 0 2% 0;
 }
 .hSeparator2 {
 	margin: 2% 0 2% 0;
@@ -459,22 +544,55 @@ html, body {
 }
 .bajadaInstitucional {
 	font-family: Georgia;
+	color: #3B3B3B;
+}
+ul.bajadaInstitucional {
+	padding: 1% 0 0 2%;
 }
 .wrapperImagenesInstitucional {
-	background-color: #FFFFFF;
-	width: 25%;
+	background-color: #F2F2F2;
+	width: 28%;
 	float: left;
 }
 .wrapperImagenesInstitucional img {
-	height: 20%;
+	height: 25%;
 	margin-left: 2.5%;
 	margin-top: 3%;
 }
 /*institucional*/
 
+/*DOCUMENTOS*/
+.wrapperDocumentos {
+	width: 72%;
+	margin-left: 10%;
+	padding: 4%;
+	background-color: #F2F2F2;
+	height: 75%;
+}
+.documento {
+	display: block;
+	width: 70%;
+	padding-left: 30%;
+	background: url(img/pdf.png) no-repeat;
+	background-size: contain;
+	margin-bottom: 3%;
+	cursor: pointer;
+}
+.tituloDocumento {
+	font-family: "Oswald";
+	color: #818181;
+}
+.VBoxMitad {
+	height: 100%;
+	width: 49%;
+	padding-right: 1%;
+	float: left;
+}
+/*DOCUMENTOS*/
+
 @media screen and (max-height: 800px) {
 	.linkNavegacion {
-		font-size: 14px;
+		font-size: 20px;
 		padding: 25px 0;
 	}
 	.encabezado {
@@ -484,6 +602,9 @@ html, body {
 	}
 	#navigation {
 		min-height: 20px;
+	}
+	#header {
+		min-height: 80px;
 	}
 
 	#cuerpo {
@@ -497,7 +618,7 @@ html, body {
 		font-size: 12px;
 	}
 	#copyright {
-		font-size: 12px;
+		font-size: 10px;
 	}
 	.diapo p {
 		font-size: 24px;
@@ -508,6 +629,13 @@ html, body {
 	}
 	.bajadaLinkHome {
 		font-size: 11px;
+	}
+	.tituloLinksMasUtilizados {
+		font-size: 20px;
+	}
+	.linkMasUtilizado {
+		font-size: 14px;
+		padding-top: 10px;
 	}
 
 	#wrapperContacto {
@@ -535,11 +663,15 @@ html, body {
 	.btnEnviar {
 		padding: 0 0 0 5px;
 	}
-	.fraseInstitucional, .fraseContacto {
+	.fraseInstitucional {
 		font-size: 32px;
+	}
+	.fraseContacto {
+		font-size: 26px;
 	}
 	.tituloInstitucional {
 		font-size: 16px;
+		padding-bottom: 15px;
 	}
 	.bajadaInstitucional {
 		font-size: 13px;
@@ -562,13 +694,7 @@ html, body {
 	.itemNavegacionFormacion {
 		min-height: 45px;
 		padding: 5px 2%;
-	}/*
-	 .itemNavegacionFormacion:after{
-	 content: '    ' url('img/arrow_right.png');
-	 display: block;
-	 width: 25px;
-	 height: 22px;
-	 }*/
+	}
 	#tituloCalendario {
 		font-size: 40px;
 	}
@@ -578,35 +704,50 @@ html, body {
 	.itemNavegacionCalendario {
 		min-height: 15px;
 		padding: 5px 2%;
-	}/*
-	 .itemNavegacionCalendario:after{
-	 content: '    ' url('img/arrow_right.png');
-	 display: block;
-	 width: 25px;
-	 height: 22px;
-	 }*/
+	}/
 	.tituloItemNavegacion {
 		font-size: 13px;
 	}
 	.bajadaItemNavegacion {
 		font-size: 11px;
 	}
+	.fraseInstitucional p, .fraseContacto p {
+		font-size: 20px;
+	}
+	.fraseInstitucional p:before, .fraseContacto p:before, .diapo p:before {
+		width: 37px;
+		height: 32px;
+	}
+	.fraseInstitucional p:after, .fraseContacto p:after, .diapo p:after {
+		width: 37px;
+		height: 32px;
+	}
+	.documento {
+		height: 50px;
+	}
+	.tituloDocumento {
+		font-size: 14px;
+	}
 }
 
 @media screen and (min-height: 800px) {
-	.linkNavegacion {
-		padding: 30px 30px 30px 30px;
-		font-size: 30px;
-	}
+
 	.encabezado {
-		font-size: 80px;
-		padding: 10px 0px 15px 80px;
+		font-size: 45px;
+		height: 70px;
+		padding: 25px 0px 15px 90px;
+		margin: 5px;
 	}
 	#navigation {
-		height: 101px;
-		padding: 0px 0px 0px 20%;
+		padding: 0px 0px 0px 0px;
 	}
-
+	.linkNavegacion {
+		padding: 45px 30px 45px 30px;
+		font-size: 25px;
+	}
+	#header {
+		min-height: 116px;
+	}
 	#cuerpo {
 		min-height: 500px;
 	}
@@ -622,7 +763,7 @@ html, body {
 	}
 
 	.diapo p {
-		font-size: 16px;
+		font-size: 28px;
 	}
 
 	#wrapperContacto {
@@ -650,5 +791,53 @@ html, body {
 	.btnEnviar {
 		padding: 0 0 0 5px;
 	}
+	.tituloInstitucional {
+		font-size: 26px;
+		padding-bottom: 25px;
+	}
+	.bajadaInstitucional {
+		font-size: 16px;
+	}
+	.tituloContacto {
+		font-size: 20px;
+	}
+	.bajadaContacto {
+		font-size: 16px;
+	}
+	.encabezadoContacto {
+		font-size: 50px;
+	}
+	#tituloFormacion {
+		font-size: 40px;
+	}
+	#bajadaFormacion {
+		font-size: 20px;
+	}
+	.itemNavegacionFormacion {
+		min-height: 45px;
+		padding: 5px 2%;
+	}
+	#tituloCalendario {
+		font-size: 40px;
+	}
+	#bajadaCalendario {
+		font-size: 17px;
+	}
 
+	.itemNavegacionCalendario {
+		min-height: 15px;
+		padding: 5px 2%;
+	}
+
+	.fraseInstitucional p, .fraseContacto p {
+		font-size: 24px;
+	}
+	.fraseInstitucional p:before, .fraseContacto p:before {
+		width: 37px;
+		height: 32px;
+	}
+	.fraseInstitucional p:after, .fraseContacto p:after {
+		width: 37px;
+		height: 32px;
+	}
 }
